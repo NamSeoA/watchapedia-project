@@ -35,7 +35,7 @@ const TopRaterSection: React.FC = () => {
                   key={movie.id}
                   linkUrl={`/movie/${movie.id}`}
                   title={movie.title}
-                  posterPath={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
+                  posterPath={`${process.env.REACT_APP_IMAGE_PREFIX}/${movie.poster_path}`}
                   voteAverage={movie.vote_average}
                   year={getYear(movie.release_date)}
                 />

@@ -8,11 +8,14 @@
 
 #### Components
 
-- Header
+- Header <br>
   emotion, react-icons 사용
 
-- Footer
+- Footer <br>
   emotion 사용
+
+- Slider <br>
+  emotion, react-slick, react-icons 사용
 
 <br>
 
@@ -30,7 +33,7 @@
 
 #### Use
 
-react-router-dom, emotion, react-icons, axios, themoviedb API 등
+emotion, react-router-dom, react-icons, react-slick, axios, themoviedb API 등
 
 <br>
 

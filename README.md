@@ -33,7 +33,7 @@
 
 #### Use
 
-emotion, react-router-dom, react-icons, react-slick, axios, themoviedb API 등
+emotion, react-router-dom, react-query, react-icons, react-slick, axios, themoviedb API 등
 
 <br>
 

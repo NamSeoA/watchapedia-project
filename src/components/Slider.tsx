@@ -3,6 +3,8 @@ import ReactSlick, { Settings } from 'react-slick';
 import styled from "@emotion/styled";
 import { css } from '@emotion/react';
 import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md' // 좌우 화살표
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 // pos : positon 받음
 const ArrowButton = styled.button<{ pos?: 'left' | 'right' }>`

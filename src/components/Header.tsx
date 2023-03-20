@@ -149,6 +149,9 @@ const Header : React.FC = () => {
                             </Link>
                         </Menu>
                         <Menu>
+                            <Link href='/'>
+                                <MenuButton>영화</MenuButton>
+                            </Link>
                             <Link href='/tv'>
                                 <MenuButton>TV 프로그램</MenuButton>
                             </Link>

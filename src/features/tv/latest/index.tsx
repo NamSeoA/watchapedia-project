@@ -3,18 +3,18 @@ import styled from "@emotion/styled";
 import useLatestTv from "./useLatestTv";
 import Card from "../../../components/Card";
 
-const LatestTvSection: React.FC = () => {
-
-    const Base = styled.div`
+const Base = styled.div`
         margin-bottom: 62px;
     `;
 
-    const Title = styled.h4`
+const Title = styled.h4`
         font-size: 22px;
         font-weight: 700;
         line-height: 30px;
         padding: 12px 0 14px;
-    `;
+`;
+
+const LatestTvSection: React.FC = () => {
 
     const { data, isLoading } = useLatestTv();
 

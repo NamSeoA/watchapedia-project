@@ -1,8 +1,11 @@
 import React from "react";
+import LatestTvSection from "../features/tv/latest";
 
 const TvPage: React.FC = () => {
     return (
-        <div>Tv Page</div>
+        <div>
+            <LatestTvSection />
+        </div>
     )
 }
 

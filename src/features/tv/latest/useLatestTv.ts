@@ -1,6 +1,6 @@
 import { useQuery } from "react-query";
 import { AxiosError, AxiosResponse } from "axios";
-import { latestApi } from "../../../apis/movieApi";
+import { latestApi } from "../../../apis/tvApi";
 import { TVDetail } from "../../../types";
 
 const useLatestTv = () => {

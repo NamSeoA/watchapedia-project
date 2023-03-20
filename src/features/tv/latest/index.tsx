@@ -32,7 +32,7 @@ const LatestTvSection: React.FC = () => {
                         title={data.data.name}
                         posterPath={`${process.env.REACT_APP_IMAGE_PREFIX}/${data.data.poster_path}`}
                         voteAverage={data.data.vote_average}
-                        year={data.data.first_air_date}
+                        year={getYear(data.data.first_air_date)}
                     />
                 )
             }

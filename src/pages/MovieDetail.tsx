@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import styled from "@emotion/styled";
 import { useParams } from "react-router-dom";
+import { Rating } from "@mui/material";
 
 import { AiFillEye, AiOutlinePlus } from 'react-icons/ai'
 import { FaPen } from 'react-icons/fa'
@@ -260,7 +261,8 @@ const MovieDetailPage: React.FC = () => {
                                         <StarRate>
                                             <StarRateText>평가하기</StarRateText>
                                             <RatingWrapper>
-                                            
+                                                {/* 별점을 매길 수 있는 컴포넌트 @mui/material */}
+                                                <Rating /> 
                                             </RatingWrapper>
                                         </StarRate>
                                         <Divider />

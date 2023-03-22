@@ -16,7 +16,7 @@ const Title = styled.h4`
 `;
 
 const LatestMovieSection: React.FC = () => {
-  const { data, isLoading } = useLatestMovie();
+  const { data: latestMovieResponse, isLoading } = useLatestMovie();
     
   const getYear = (release_date: string) => release_date.split('-')[0] || '';
 
@@ -24,17 +24,19 @@ const LatestMovieSection: React.FC = () => {
     <Base>
       <Title>최근 개봉작</Title>
       {
-        isLoading || !data ? (
+        isLoading ? (
           <div>Loading...</div>
         ) : (
+          latestMovieResponse?.data && (
             <Card
-              key={data.data.id}
-              linkUrl={`/movie/${data.data.id}`}
-              title={data.data.title}
-              posterPath={`${process.env.REACT_APP_IMAGE_PREFIX}/${data.data.poster_path}`}
-              voteAverage={data.data.vote_average}
-              year={getYear(data.data.release_date)}
+              key={latestMovieResponse.data.id}
+              linkUrl={`/movie/${latestMovieResponse.data.id}`}
+              title={latestMovieResponse.data.title}
+              posterPath={`${process.env.REACT_APP_IMAGE_PREFIX}/${latestMovieResponse.data.poster_path}`}
+              voteAverage={latestMovieResponse.data.vote_average}
+              year={getYear(latestMovieResponse.data.release_date)}
             />
+          )
         )
       }
     </Base>

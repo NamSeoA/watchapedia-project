@@ -7,13 +7,12 @@ import MovieDetail from './pages/MovieDetail';
 
 function App() {
   return (
-    // 상세 페이지 개발해야함
     <Router>
       <Routes>
-        <Route path='/*' Component={MainPage}/>
-        <Route path='/tv' Component={TvPage}/>
-        <Route path='/movie/:id' Component={MovieDetail}/>
-        <Route path='/tv/:id' Component={TvDetail}/>
+        <Route path='/*' element={<MainPage />}/>
+        <Route path='/tv' element={<TvPage />}/>
+        <Route path='/tv/:id' element={<TvDetail />}/>
+        <Route path='/movie/:id' element={<MovieDetail />}/>
         <Route />
       </Routes>
     </Router>

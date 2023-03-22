@@ -35,7 +35,7 @@ const Menu = styled.li`
     align-items: center;
     height: 62px;
     flex-shrink: 0;
-    &:not(:first-of-type){
+    &:not(:first-of-type) {
         margin: 0 0 0 24px;
     }
 `;
@@ -213,13 +213,13 @@ const Header : React.FC = () => {
                             </SearchContainer>
                             <SearchResultWrapper>
                                 <SearchResultList>
-                                    {
-                                        searchResult?.data.results.map(item => (
-                                            <Link key={item.id} href={`/movie/${item.id}`}>
-                                                <SearchResultListItem>{item.title}</SearchResultListItem>
-                                            </Link>
-                                        ))
-                                    }
+                                {
+                                    searchResult?.results.map((searchResultItem) => (
+                                    <Link href={`/movie/${searchResultItem.id}`} key={searchResultItem.id}>
+                                        <SearchResultListItem>{searchResultItem.title}</SearchResultListItem>
+                                    </Link>
+                                    ))
+                                }
                                 </SearchResultList>
                             </SearchResultWrapper>
                         </SearchMenu>
@@ -227,7 +227,7 @@ const Header : React.FC = () => {
                             <SignIn>로그인</SignIn>
                         </Menu>
                         <Menu>
-                            <SignIn>회원가입</SignIn>
+                            <SignUp>회원가입</SignUp>
                         </Menu>
                     </MenuList>
                 </MenuListwrapper>

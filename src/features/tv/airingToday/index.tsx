@@ -32,6 +32,7 @@ const AiringTodayTvSection: React.FC = () => {
                     {
                          data.data.results.map(tv => (
                             <Card
+                            key={tv.id}
                             linkUrl={`/tv/${tv.id}`}
                             title={tv.name}
                             posterPath={`${process.env.REACT_APP_IMAGE_PREFIX}/${tv.poster_path}`}

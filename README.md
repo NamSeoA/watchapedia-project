@@ -13,6 +13,13 @@
 
 <br><br>
 
+#### Tech Stack
+
+TypeScript, React.js <br>
+emotion, react-router-dom, react-query, react-icons, react-slick, axios, MUI(Material UI) 등
+
+<br><br>
+
 #### Pages
 
 - 메인 페이지 <br>
@@ -44,13 +51,6 @@
 - Card <br>
   하나의 프로그램 및 영화를 리스트 나타낼 때 사용하는 컴포넌트 <br>
   emotion, react-router, react-icons 사용
-
-<br><br>
-
-#### Tech Stack
-
-TypeScript, React.js <br>
-emotion, react-router-dom, react-query, react-icons, react-slick, axios, MUI(Material UI) 등
 
 <br><br>
 

@@ -5,10 +5,10 @@ import { AiFillStar } from 'react-icons/ai';
 
 // 카드
 interface Props {
-    linkUrl: string;
-    title: string;
-    year: string;
-    posterPath: string;
+    linkUrl: string;    // 상세페이지
+    title: string;      // 제목
+    year: string;       // 개봉년도
+    posterPath: string; // 포스터
     voteAverage: number; // 평점
 }
 

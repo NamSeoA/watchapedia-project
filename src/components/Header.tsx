@@ -4,14 +4,16 @@ import { BiSearchAlt } from 'react-icons/bi';
 import useMovieSearch from '../features/movie/useMovieSearch';
 
 const Base = styled.header`
+    width: 100%;
+    margin: 0 auto;
+    height: 62px;
     position: fixed;
     top: 0;
     left: 0;
-    background: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     text-align: center;
-    box-shadow: rgb(0 0 0 / 0%) 0px 1px 0px 0px;
-    width: 100%;
-    height: 62px; //고정
+    box-shadow: rgb(0 0 0 / 8%) 0px 1px 0px 0px;
+    transition: background-color 200ms ease 0s;
     z-index: 10;
 `;
 
@@ -27,7 +29,6 @@ const MenuList = styled.ul`
     padding: 0;
     margin: 0;
     display: flex;
-    overflow: hidden;
 `;
 
 const Menu = styled.li`
@@ -134,7 +135,7 @@ const SearchResultWrapper = styled.div`
     position: absolute;
     top: 60px;
     left: 0;
-    z-index: 9999999;
+    z-index: 999;
     background-color: #fff;
     width: 100%;
     border-radius: 8px;
@@ -145,6 +146,8 @@ const SearchResultWrapper = styled.div`
 
 const SearchResultList = styled.ul`
     list-style: none;
+    color:white;
+    z-index: 999999;
     margin: 0;
     padding: 0;
 `;
@@ -162,8 +165,10 @@ const SearchResultListItem = styled.li`
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    z-index: 9999999;
     &:hover {
         background-color: #eee;
+        font-weight: 500;
     }
 `;
 

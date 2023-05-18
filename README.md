@@ -61,3 +61,15 @@ themoviedb API 사용
 <br><br>
 
 #### 구현 기능 및 이미지
+<img width="1440" alt="main_1" src="https://github.com/NamSeoA/watchapedia-project/assets/71997900/bd26be05-b7f8-4f29-b893-dbf6401b0ccb">
+<br>
+<img width="1440" alt="main_3" src="https://github.com/NamSeoA/watchapedia-project/assets/71997900/33d75735-d87c-4b73-92f7-62c385c9f53f">
+<br>
+<img width="1440" alt="main_4" src="https://github.com/NamSeoA/watchapedia-project/assets/71997900/00f4f157-8751-4a28-b946-52aa4367badd">
+<br>
+<img width="1438" alt="movie detail page" src="https://github.com/NamSeoA/watchapedia-project/assets/71997900/3d5c8919-3b8b-46cf-9c9b-260320adc056">
+
+<br><br>
+ 
+
+

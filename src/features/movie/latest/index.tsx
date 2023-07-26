@@ -27,6 +27,8 @@ const LatestMovieSection: React.FC = () => {
         isLoading ? (
           <div>Loading...</div>
         ) : (
+          // Optional Chaining, Short-Circuit Evaluation
+          // latestMovieResponse?.data가 null 또는 undefined가 아니면서 해당 객체의 data 프로퍼티가 truthy 값인 경우에만 괄호 안의 코드가 실행
           latestMovieResponse?.data && (
             <Card
               key={latestMovieResponse.data.id}
